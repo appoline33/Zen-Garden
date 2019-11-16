@@ -12,6 +12,7 @@ body{
     margin: 0;
 }
 
+
 // Block d'entête
 header{
     display: flex;
@@ -36,6 +37,7 @@ header{
     }
 
 }
+
 
 // Introduction (Summary)
 .summary{
@@ -66,6 +68,7 @@ header{
 .preamble{
     @include left_column();
 
+    //Mise en forme du texte
     h3{
         @include h3();  
     }
@@ -87,6 +90,7 @@ header{
 .participation{
     @extend .preamble;
 
+    //Liens du bloc de texte
     a{
         @include a();
     }
@@ -103,6 +107,7 @@ header{
 .requirements{
     @extend .preamble;
 
+    //Liens du bloc de texte
     a{
         @include a();
     }
@@ -117,6 +122,7 @@ footer{
     background-color: #113a5d;
     padding: 20px 0px 20px 0px;
 
+    //Liens du footer
     a{
         text-decoration: none;
         font-family: $font-h2;
@@ -124,6 +130,7 @@ footer{
         padding: 0 20px 0 20px;
     }
 }
+
 
 //Petite colonne de droite
 .wrapper{
@@ -138,6 +145,7 @@ footer{
     background-color: #fee9b2;
 }
 
+//Parties de la petite colonne de droite
 .design{
 
     //Première petite colonne de droite (Select a design)
@@ -146,6 +154,7 @@ footer{
             @include h3_2();
         }
         
+        //Navigation
         nav ul{
             @include ul();
             padding-left: 20px;
@@ -166,6 +175,7 @@ footer{
             @include h3_2();
         }
         
+        //Navigation
         nav ul{
             @include ul();
             padding-left: 0px;
@@ -203,6 +213,7 @@ footer{
         color: $color-h3;
     }
 
+    //Navigation
     ul{
         list-style: none;
         font-family: $font-p;

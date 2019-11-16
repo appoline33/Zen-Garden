@@ -1,13 +1,13 @@
-//Mise en forme des colonnes
-    //Grande colonne de gauche
-    @mixin left_column{
-        float: left;
-        clear: left;
-        width: 75%;
-        padding: 50px 0 20px 0;
-    }
+//Grande colonne de gauche
+@mixin left_column{
+    float: left;
+    clear: left;
+    width: 75%;
+    padding: 50px 0 20px 0;
+}
 
 
+//Mise en forme des textes
     //Mise en forme des H3
     @mixin h3{
         font-family: $font-h3;
@@ -31,27 +31,22 @@
     }
 
 
-    //Mise en forme de la petite colonne de droite (H3)
+//Petite colonne de droite
+    //Mise en forme des H3
     @mixin h3_2{
         font-family: $font-h3;
         color: $color-h3;
         font-size: 20px;
     }
 
-
-    //Mise en forme de la petite colonne de droite (ul)
+    //Mise en forme des ul
     @mixin ul{
         list-style: none;
         font-family: $font-p;
         color: $color-p2;
     }
     
-
-    //Mise en forme de la petite colonne de droite (li)
-    
-
-
-    //Mise en forme de la petite colonne de droite (a)
+    //Mise en forme des a href
     @mixin a_2{
         text-decoration: none;
         font-family: $font-p;
