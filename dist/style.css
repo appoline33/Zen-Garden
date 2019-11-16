@@ -80,31 +80,54 @@ footer {
 }
 
 .design-selection {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
-  top: 360px;
   right: 0;
   width: 33.3%;
+  padding: 0 0 20px 0;
+  margin: 0;
   overflow: visible;
   background: transparent;
-  margin-bottom: 50px;
+  top: 360px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
 .design-archives {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
-  top: 360px;
   right: 0;
   width: 33.3%;
+  padding: 0 0 20px 0;
+  margin: 0;
   overflow: visible;
   background: transparent;
+  top: 660px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
 .zen-resources {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
   position: absolute;
-  top: 360px;
   right: 0;
   width: 33.3%;
+  padding: 0 0 20px 0;
+  margin: 0;
   overflow: visible;
   background: transparent;
+  top: 960px;
+  list-style: none;
+  text-decoration: none;
+  color: black;
 }
 
 /*# sourceMappingURL=style.css.map */

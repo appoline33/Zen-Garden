@@ -8,12 +8,21 @@
 
     //Petite colonne de droite
     @mixin right_column{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
         position: absolute;
-        top: 360px;
+        //top: 360px;
         right: 0;
         width: 33.3%;
-        //padding: 0 0 20px 0;
-        //margin: 0;
+        padding: 0 0 20px 0;
+        margin: 0;
         overflow: visible;
         background: transparent;
+    }
+
+    @mixin list-style{
+        list-style: none;
+        text-decoration: none;
+        color: black;
     }

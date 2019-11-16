@@ -105,17 +105,22 @@ footer{
 //Première petite colonne de droite (Select a design)
 .design-selection{
     @include right_column();
-    margin-bottom: 50px;
+    top: 360px;
+    @include list-style();
 }
 
 
 //Deuxième petite colonne de droite (Archives)
 .design-archives{
     @include right_column();
+    top: 660px;
+    @include list-style();
 }
 
 
 //Troisième petite colonne de droite (Ressources)
 .zen-resources{
     @include right_column();
+    top: 960px;
+    @include list-style ();
 }
