@@ -54,5 +54,68 @@ header{
         text-decoration: none;
         color: white;
     }
+}
 
+//Premier bloc de texte (Preamble)
+.preamble{
+    @include left_column();
+}
+
+//Deuxième bloc de texte (So What is This About ?)
+.explanation{
+    @include left_column();
+}
+
+
+//Troisième bloc de texte (Participation)
+.participation{
+    @include left_column();
+}
+
+
+//Quatrième bloc de texte (Benefits)
+.benefits{
+    @include left_column();
+}
+
+
+//Cinquième bloc de texte (Requirements)
+.requirements{
+    @include left_column();
+
+
+    //Dernier paragraphe
+    p:last-child{
+        width: 100%;
+        display: flex;
+        justify-content: center;
+    }
+}
+
+
+//Footer
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    background-color: green;
+}
+
+
+//Première petite colonne de droite (Select a design)
+.design-selection{
+    @include right_column();
+    margin-bottom: 50px;
+}
+
+
+//Deuxième petite colonne de droite (Archives)
+.design-archives{
+    @include right_column();
+}
+
+
+//Troisième petite colonne de droite (Ressources)
+.zen-resources{
+    @include right_column();
 }

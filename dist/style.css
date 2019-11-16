@@ -37,4 +37,74 @@ header h2 {
   color: white;
 }
 
+.preamble {
+  float: left;
+  clear: left;
+  width: 66%;
+}
+
+.explanation {
+  float: left;
+  clear: left;
+  width: 66%;
+}
+
+.participation {
+  float: left;
+  clear: left;
+  width: 66%;
+}
+
+.benefits {
+  float: left;
+  clear: left;
+  width: 66%;
+}
+
+.requirements {
+  float: left;
+  clear: left;
+  width: 66%;
+}
+.requirements p:last-child {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+}
+
+footer {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  background-color: green;
+}
+
+.design-selection {
+  position: absolute;
+  top: 360px;
+  right: 0;
+  width: 33.3%;
+  overflow: visible;
+  background: transparent;
+  margin-bottom: 50px;
+}
+
+.design-archives {
+  position: absolute;
+  top: 360px;
+  right: 0;
+  width: 33.3%;
+  overflow: visible;
+  background: transparent;
+}
+
+.zen-resources {
+  position: absolute;
+  top: 360px;
+  right: 0;
+  width: 33.3%;
+  overflow: visible;
+  background: transparent;
+}
+
 /*# sourceMappingURL=style.css.map */
