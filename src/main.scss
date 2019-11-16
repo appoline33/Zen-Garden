@@ -12,21 +12,21 @@ header{
     display: flex;
     flex-direction: column;
     align-items: center;
-    background: green;
+    background: #113a5d;
 
     // Mise en forme des titres
     h1{
-        font-family: $font-titre;
+        font-family: $font-h1;
         font-size: 50px;
-        color: yellow;
+        color: $color-h1;
         margin-bottom: 0;
     }
 
     h2{
-        font-family: $font-titre;
+        font-family: $font-h2;
         font-size: 25px;
         font-weight: 350;
-        color: white;
+        color: $color-h2;
         margin-top: 0;
     }
 
@@ -38,13 +38,13 @@ header{
     flex-direction: column;
     align-items: center;
     padding: 20px 0 30px 0;
-    background-color: green;
-    color: white;
+    background-color: #113a5d;
+    color: $color-p1;
     
     //Paragraphes
     p{
+        font-family: $font-p;
         font-size: 16px;
-        font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
         font-weight: 200;
         margin: 10px 0 5px 0;
     }
@@ -56,40 +56,66 @@ header{
     }
 }
 
+//Habillage de fond
+// .main.supporting.background{
+//     background-image: url(../img/sakura-8.jpg);
+//     background-size: 75%;
+//     background-repeat: no-repeat;
+//     position: relative;
+//     opacity: 50%;
+//     z-index:-1;  
+// }
+
 //Premier bloc de texte (Preamble)
 .preamble{
     @include left_column();
+
+    h3{
+        @include h3();  
+    }
+    
+    p{
+        @include paragraphe();
+    }
 }
 
 //Deuxième bloc de texte (So What is This About ?)
 .explanation{
-    @include left_column();
+    @extend .preamble;
 }
 
 
 //Troisième bloc de texte (Participation)
 .participation{
-    @include left_column();
+    @extend .preamble;
+
+    a{
+        @include a();
+    }
 }
 
 
 //Quatrième bloc de texte (Benefits)
 .benefits{
-    @include left_column();
+    @extend .preamble;
 }
 
 
 //Cinquième bloc de texte (Requirements)
 .requirements{
-    @include left_column();
+    @extend .preamble;
+
+    a{
+        @include a();
+    }
 
 
     //Dernier paragraphe
-    p:last-child{
-        width: 100%;
-        display: flex;
-        justify-content: center;
-    }
+    // p:last-child{
+    //     width: 100%;
+    //     display: flex;
+    //     justify-content: center;
+    // }
 }
 
 
@@ -105,22 +131,87 @@ footer{
 //Première petite colonne de droite (Select a design)
 .design-selection{
     @include right_column();
-    top: 360px;
-    @include list-style();
+    top: 300px;
+    
+    h3{
+        font-family: $font-h3;
+        color: $color-h3;
+    }
+    
+    nav ul{
+        list-style: none;
+        font-family: $font-p;
+        color: $color-p2;
+        padding-left: 20px;
+    }
+
+    nav li{
+        margin: 10px 0 10px 0;
+    }
+    
+    nav a{
+        text-decoration: none;
+        font-family: $font-p;
+        color: $color-p2;
+    }
+    
 }
 
 
 //Deuxième petite colonne de droite (Archives)
 .design-archives{
     @include right_column();
-    top: 660px;
-    @include list-style();
+    top: 690px;
+    
+    h3{
+        font-family: $font-h3;
+        color: $color-h3;
+    }
+
+    nav ul{
+        list-style: none;
+        font-family: $font-p;
+        color: $color-p2;
+        padding-left: 0px;
+    }
+
+    nav li{
+        margin: 10px 0 10px 0;
+    }
+
+    nav a{
+        text-decoration: none;
+        font-family: $font-p;
+        color: $color-p2;
+    }
+    
 }
 
 
 //Troisième petite colonne de droite (Ressources)
 .zen-resources{
     @include right_column();
-    top: 960px;
-    @include list-style ();
+    top: 905px;
+    
+    h3{
+        font-family: $font-h3;
+        color: $color-h3;
+    }
+
+    ul{
+        list-style: none;
+        font-family: $font-p;
+        color: $color-p2;
+        padding-left: 0px;
+    }
+
+    li{
+        margin: 10px 0 10px 0;
+    }
+
+    a{
+        text-decoration: none;
+        font-family: $font-p;
+        color: $color-p2;
+    }
 }
