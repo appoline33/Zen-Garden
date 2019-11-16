@@ -1,3 +1,7 @@
+body {
+  margin: 0;
+}
+
 header {
   display: flex;
   flex-direction: column;
@@ -15,7 +19,7 @@ header h2 {
   font-size: 25px;
   font-weight: 350;
   color: #f9fce1;
-  margin-top: 0;
+  margin-top: 10px;
 }
 
 .summary {
@@ -54,6 +58,7 @@ header h2 {
   font-family: "open sans condensed";
   color: #005e7c;
   font-size: 16px;
+  padding-left: 1%;
 }
 
 .participation a {
@@ -70,24 +75,32 @@ footer {
   width: 100%;
   display: flex;
   justify-content: center;
-  background-color: green;
+  background-color: #113a5d;
+  padding: 20px 0px 20px 0px;
+}
+footer a {
+  text-decoration: none;
+  font-family: "Ibarra Real Nova";
+  color: #f9fce1;
+  padding: 0 20px 0 20px;
 }
 
-.design-selection {
+.wrapper {
   display: flex;
   flex-direction: column;
   align-items: center;
   position: absolute;
+  top: 290px;
   right: 0;
   width: 25%;
-  padding: 50px 0 0 0;
-  margin: 0;
+  height: 1581px;
   background-color: #fee9b2;
-  top: 300px;
 }
+
 .design-selection h3 {
   font-family: "Ibarra Real Nova";
   color: #113a5d;
+  font-size: 20px;
 }
 .design-selection nav ul {
   list-style: none;
@@ -103,22 +116,10 @@ footer {
   font-family: "open sans condensed";
   color: #005e7c;
 }
-
-.design-archives {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  right: 0;
-  width: 25%;
-  padding: 50px 0 0 0;
-  margin: 0;
-  background-color: #fee9b2;
-  top: 690px;
-}
 .design-archives h3 {
   font-family: "Ibarra Real Nova";
   color: #113a5d;
+  font-size: 20px;
 }
 .design-archives nav ul {
   list-style: none;
@@ -135,17 +136,16 @@ footer {
   color: #005e7c;
 }
 
+.design-selection {
+  padding: 60px 0 0 0;
+}
+
+.design-archives {
+  padding: 255px 0 0 0;
+}
+
 .zen-resources {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  position: absolute;
-  right: 0;
-  width: 25%;
-  padding: 50px 0 0 0;
-  margin: 0;
-  background-color: #fee9b2;
-  top: 905px;
+  padding: 205px 0 0 0;
 }
 .zen-resources h3 {
   font-family: "Ibarra Real Nova";

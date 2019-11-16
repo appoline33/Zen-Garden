@@ -7,6 +7,11 @@
 @import "mixins.scss";
 
 
+//Body
+body{
+    margin: 0;
+}
+
 // Block d'entête
 header{
     display: flex;
@@ -27,7 +32,7 @@ header{
         font-size: 25px;
         font-weight: 350;
         color: $color-h2;
-        margin-top: 0;
+        margin-top: 10px;
     }
 
 }
@@ -56,15 +61,6 @@ header{
     }
 }
 
-//Habillage de fond
-// .main.supporting.background{
-//     background-image: url(../img/sakura-8.jpg);
-//     background-size: 75%;
-//     background-repeat: no-repeat;
-//     position: relative;
-//     opacity: 50%;
-//     z-index:-1;  
-// }
 
 //Premier bloc de texte (Preamble)
 .preamble{
@@ -76,8 +72,10 @@ header{
     
     p{
         @include paragraphe();
+        padding-left: 1%;
     }
 }
+
 
 //Deuxième bloc de texte (So What is This About ?)
 .explanation{
@@ -108,14 +106,6 @@ header{
     a{
         @include a();
     }
-
-
-    //Dernier paragraphe
-    // p:last-child{
-    //     width: 100%;
-    //     display: flex;
-    //     justify-content: center;
-    // }
 }
 
 
@@ -124,74 +114,89 @@ footer{
     width: 100%;
     display: flex;
     justify-content: center;
-    background-color: green;
+    background-color: #113a5d;
+    padding: 20px 0px 20px 0px;
+
+    a{
+        text-decoration: none;
+        font-family: $font-h2;
+        color: $color-h2;
+        padding: 0 20px 0 20px;
+    }
+}
+
+//Petite colonne de droite
+.wrapper{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: absolute;
+    top: 290px;
+    right: 0;
+    width: 25%;
+    height: 1581px;
+    background-color: #fee9b2;
+}
+
+.design{
+
+    //Première petite colonne de droite (Select a design)
+    &-selection{
+        h3{
+            @include h3_2();
+        }
+        
+        nav ul{
+            @include ul();
+            padding-left: 20px;
+        }
+    
+        nav li{
+            margin: 10px 0 10px 0;
+        }
+        
+        nav a{
+            @include a_2();
+        }
+    }
+
+    //Deuxième petite colonne de droite (Archives)
+    &-archives{
+        h3{
+            @include h3_2();
+        }
+        
+        nav ul{
+            @include ul();
+            padding-left: 0px;
+        }
+    
+        nav li{
+            margin: 10px 0 10px 0;
+        }
+        
+        nav a{
+            @include a_2();
+        } 
+    } 
 }
 
 
-//Première petite colonne de droite (Select a design)
+//Positionnement "Select a Design"
 .design-selection{
-    @include right_column();
-    top: 300px;
-    
-    h3{
-        font-family: $font-h3;
-        color: $color-h3;
-    }
-    
-    nav ul{
-        list-style: none;
-        font-family: $font-p;
-        color: $color-p2;
-        padding-left: 20px;
-    }
-
-    nav li{
-        margin: 10px 0 10px 0;
-    }
-    
-    nav a{
-        text-decoration: none;
-        font-family: $font-p;
-        color: $color-p2;
-    }
-    
+    padding: 60px 0 0 0;
 }
 
 
-//Deuxième petite colonne de droite (Archives)
+//Positionnement "Archives"
 .design-archives{
-    @include right_column();
-    top: 690px;
-    
-    h3{
-        font-family: $font-h3;
-        color: $color-h3;
-    }
-
-    nav ul{
-        list-style: none;
-        font-family: $font-p;
-        color: $color-p2;
-        padding-left: 0px;
-    }
-
-    nav li{
-        margin: 10px 0 10px 0;
-    }
-
-    nav a{
-        text-decoration: none;
-        font-family: $font-p;
-        color: $color-p2;
-    }
-    
+    padding: 255px 0 0 0;
 }
 
 
 //Troisième petite colonne de droite (Ressources)
 .zen-resources{
-    @include right_column();
-    top: 905px;
+    padding: 205px 0 0 0;
     
     h3{
         font-family: $font-h3;
